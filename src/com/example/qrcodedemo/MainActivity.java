@@ -9,6 +9,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 /**
@@ -26,6 +27,7 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 		
 		ViewUtils.inject(this);
+		Log.e("--test--", "测试");
 	}
 	//生成二维码
 	@OnClick(R.id.button1)
